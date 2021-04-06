@@ -40,6 +40,7 @@ main{
 article{
    width: 90%;
    margin-left: 205px;
+   
 }
 article img{
   display: inline;
@@ -54,21 +55,27 @@ article h2{
 article div{
     max-height: 300px;
     overflow: scroll;
+    scroll-snap-type: none;
     padding: 10px;
-    width: 45%;
+    width: 38%;
+    height: max-content;
+    margin-bottom: 10px;
 }
 article div p{
-    line-height: 0.8;
+    line-height: 1.2;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
+    box-sizing: content-box;
+
 }
-article div button{
+article  button{
  background-color: #222222;
  color:  #f2f2f2;
  padding: 15px 30px;
  margin-top: 15px;
+ margin-left: 10px;
 }
-article div button:hover{
+article  button:hover{
     background-color: #555555;
 }
 footer{
@@ -76,4 +83,7 @@ footer{
     height: 50px;
     background-color: #555555;
     width: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
 }
